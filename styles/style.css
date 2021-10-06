@@ -16,6 +16,8 @@ $desktop-breakpoint: 45rem;
 
 /* Base Styles */
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,7 +29,10 @@ html {
 }
 
 body {
-    background: #2B292E;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #434343,#000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: #fafafa;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
@@ -52,9 +57,11 @@ a {
 /* Header */
 
 .header {
-  background: #6F439C;
-  color:white;
-  padding: 1.6rem 0;
+    background: #6a3093;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #a044ff, #6a3093);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #a044ff, #6a3093); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    color:white;
+    padding: 1.6rem 0;
 }
 
 .header__title {
@@ -94,6 +101,7 @@ a {
 
 .input {
     border: none;
+    font-family: 'Baloo 2', cursive;
     font-size: 1.4rem;
     font-weight: 300;
     height: 3rem;
@@ -121,8 +129,11 @@ a {
     transition: background .3s ease, color .3s ease;
 }
 
-.button:hover {
+.btn:hover {
+    border: 1px solid mediumpurple;
+    box-shadow: 0px 0px 10px white;
     background: #5F3A87;
+    border-radius: 2px;
 }
 
 .button--secondary {
@@ -220,4 +231,9 @@ a {
 
 .empty-message {
     margin: 3.2rem 0;
+}
+
+.h2-sect{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
 }
