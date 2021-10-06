@@ -80,10 +80,10 @@ const generateTodoDOM = function (todo) {
     checkbox.checked = todo.completed
     containerEl.appendChild(checkbox)
     checkbox.addEventListener('change', () => {
-        toggleTodo(todo.id)
-        saveTodos(todos)
-        renderTodos(todos, filter)
-    })
+        toggleTodo(todo.id);
+        saveTodos(todos);
+        renderTodos(todos, filter);
+    });
 
     // Setup the todo text
     todoText.textContent = todo.text
@@ -115,9 +115,9 @@ const generateTodoDOM = function (todo) {
 const generateSummaryDOM = function (incompleteTodos) {
     const summary = document.createElement('h2')
     summary.classList.add('list-title')
-
+    summary.setAttribute('class','h2-sect');
     incompleteTodos.length === 1 ? summary.textContent = `You have ${incompleteTodos.length} todo left` : summary.textContent = `You have ${incompleteTodos.length} todos left`
-  
+    
    
     return summary
 }
