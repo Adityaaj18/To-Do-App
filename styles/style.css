@@ -152,9 +152,9 @@ a {
 }
 
 .button--text:hover {
-    background: none;
-    color: white;
-    text-decoration: underline;
+   background: none;
+   color: rgb(218, 53, 53);
+   text-decoration: underline;
 }
 
 /* Note editor */
@@ -237,3 +237,8 @@ a {
     font-family: 'Roboto', sans-serif;
     margin-top: 30px;
 }
+
+#input-todo {
+   margin-top: 20px;
+}
+
